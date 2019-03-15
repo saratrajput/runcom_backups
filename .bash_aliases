@@ -57,3 +57,15 @@ alias ..2="cd ../.."
 alias ..3="cd ../../.."
 alias ..4="cd ../../../.."
 alias ..5="cd ../../../../.."
+
+# cat and copy to clipboard
+#alias copycat='cat $file | xclip -sel clip'
+
+# remote connect to training data
+alias remote_deeplearning='sshfs suraj@35.229.228.148:/var/trainingdata remote_deeplearning; cd remote_deeplearning'
+
+# remote connect to max's pc
+alias remote_maxpc='sshfs suraj@10.3.3.7:/ remote_max_pc'
+
+# ssh super-computer
+alias super_computer='ssh suraj@35.229.228.148'
