@@ -19,7 +19,7 @@ alias findPattern='grep -irnw ./ -e'
 #source /home/sp/catkin_ws/devel/setup.bash
 
 # Docker remove trailing exited images
-#alias docker_rm_exited='docker rm $(docker ps -a -q -f status=exited)'
+alias docker_rm_exited='docker rm $(docker ps -a -q -f status=exited)'
 
 # Catkin cd and make
 alias cm='cd ~/dishwasher_ws && catkin_make'
@@ -28,7 +28,7 @@ alias cm='cd ~/dishwasher_ws && catkin_make'
 #alias cdh='cd ~/catkin_ws/src/hoshi/src'
 
 # activate anaconda
-#alias activate_anaconda='export PATH=~/anaconda3/bin:$PATH'
+alias activate_anaconda='export PATH=~/anaconda3/bin:$PATH'
 
 # find word in history
 alias hgrep='history | grep -i'
@@ -62,10 +62,19 @@ alias ..5="cd ../../../../.."
 #alias copycat='cat $file | xclip -sel clip'
 
 # remote connect to training data /var/trainingdata
-alias remote_deeplearning='sshfs suraj@35.229.228.148:/ remote_deeplearning; cd remote_deeplearning'
+alias remote_deeplearning='sshfs suraj@35.229.227.23:/ remote_deeplearning; cd remote_deeplearning'
 
 # remote connect to max's pc
 alias remote_maxpc='sshfs suraj@10.3.3.7:/ remote_max_pc'
 
 # ssh super-computer
-alias super_computer='ssh suraj@35.229.228.148'
+alias super_computer='ssh suraj@35.229.227.23'
+
+# cd to ubuntu-16 jail
+alias ubuntu_16_chroot='cd /srv/chroot/xenial_amd64'
+
+# launch Unreal Engine 
+alias UnrealEngine='~/UnrealEngine/Engine/Binaries/Linux/UE4Editor'
+
+# ssh super-computer-2
+alias super_computer_2='ssh suraj@34.80.146.141'
