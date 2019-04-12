@@ -1,9 +1,6 @@
 # trash-put
 alias del="trash-put"
 
-# history command with timestamp
-export HISTTIMEFORMAT="%d/%m/%y %T "
-
 # list and grep case insensitive
 alias lg='ll | grep -i'
 
@@ -13,19 +10,11 @@ alias removeSpace='rename "s/ //g" *'
 # find word in all files in that folder
 alias findPattern='grep -irnw ./ -e'
 
-# Ros setup
-#source /opt/ros/kinetic/setup.bash
-# Different for each workspace
-#source /home/sp/catkin_ws/devel/setup.bash
-
 # Docker remove trailing exited images
 alias docker_rm_exited='docker rm $(docker ps -a -q -f status=exited)'
 
 # Catkin cd and make
 alias cm='cd ~/dishwasher_ws && catkin_make'
-
-# cd hoshi project
-#alias cdh='cd ~/catkin_ws/src/hoshi/src'
 
 # activate anaconda
 alias activate_anaconda='export PATH=~/anaconda3/bin:$PATH'
@@ -58,17 +47,36 @@ alias ..3="cd ../../.."
 alias ..4="cd ../../../.."
 alias ..5="cd ../../../../.."
 
-# cat and copy to clipboard
-#alias copycat='cat $file | xclip -sel clip'
+# sshfs to super-pc-1 
+alias remote_super_pc_1='sshfs suraj@35.229.227.23:/ remote_super_pc_1; cd remote_super_pc_1'
 
-# remote connect to training data /var/trainingdata
-alias remote_deeplearning='sshfs suraj@35.229.227.23:/ remote_deeplearning; cd remote_deeplearning'
+# sshfs to super-pc-2
+alias remote_super_pc_2='sshfs suraj@34.80.146.141:/ remote_super_pc_2; cd remote_super_pc_2'
 
-# remote connect to max's pc
-alias remote_maxpc='sshfs suraj@10.3.3.7:/ remote_max_pc'
+# sshfs to super-pc-3
+alias remote_super_pc_3='sshfs suraj@35.243.106.53:/ remote_super_pc_3; cd remote_super_pc_3'
 
-# ssh super-computer
-alias super_computer='ssh suraj@35.229.227.23'
+# ssh super-computer-1
+alias super_pc_1='ssh suraj@35.229.227.23'
+
+# ssh super-computer-2
+alias super_pc_2='ssh suraj@34.80.146.141'
+
+# ssh super-computer-3
+alias super_pc_3='ssh suraj@35.243.106.53'
+
+# ssh super-computer-4
+alias super_pc_4='ssh suraj@35.221.100.213'
+
+# ssh super-computer-5
+alias super_pc_5='ssh suraj@35.189.136.48'
+alias remote_super_pc_5='sshfs suraj@35.189.136.48:/ remote; cd remote'
+
+# ssh super-computer-6
+alias super_pc_6='ssh suraj@35.221.79.94'
+
+# sshfs to max's pc
+alias remote_max_pc='sshfs suraj@10.3.3.7:/ remote_max_pc; cd remote_max_pc'
 
 # cd to ubuntu-16 jail
 alias ubuntu_16_chroot='cd /srv/chroot/xenial_amd64'
@@ -76,5 +84,9 @@ alias ubuntu_16_chroot='cd /srv/chroot/xenial_amd64'
 # launch Unreal Engine 
 alias UnrealEngine='~/UnrealEngine/Engine/Binaries/Linux/UE4Editor'
 
-# ssh super-computer-2
-alias super_computer_2='ssh suraj@34.80.146.141'
+# activate ros on ubuntu-16
+alias activate_ros='source /opt/ros/lunar/setup.bash'
+
+# cd to dope training in remote super pc
+alias cd-dope-train-remote='cd /home/suraj/remote_super_pc_1/home/suraj/dope/src/training'
+

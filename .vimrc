@@ -20,9 +20,6 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " csv plugin
 Plugin 'chrisbra/csv.vim' 
 
-" You complete me
-Plugin 'Valloric/YouCompleteMe'
-
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -45,7 +42,3 @@ syntax on
 set tabstop=4
 set shiftwidth=4
 set expandtab
-
-" To make folds permanent
-autocmd BufWinLeave *.* mkview
-autocmd BufWinEnter *.* silent loadview

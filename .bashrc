@@ -105,11 +105,6 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-# Function definitions
-# Store function definitions in ~/.bash_functions
-if [ -f ~/.bash_functions ]; then
-    . ~/.bash_functions
-fi
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -121,14 +116,20 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Setup ROS
-source /opt/ros/melodic/setup.bash
+# history command with timestamp
+export HISTTIMEFORMAT="%d/%m/%y %T "
 
-# Cuda Setup 
-export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}
-export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/cuda-10.0/lib64
-export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64"
-export CUDA_HOME=/usr/local/cuda
+# ROS setup
+#source /opt/ros/lunar/setup.bash
+#source ~/hoshi_ws/devel/setup.bash
 
-# Private scripts
-export PATH=$HOME/bin:$PATH
+# Select version of QT
+#export QT_SELECT=5
+
+# Set ROS network
+#export ROS_HOSTNAME=localhost
+#export ROS_MASTER_URI=http://${ROS_HOSTNAME}:11311
+
+#export PATH="/home/suraj/.pyenv/bin:$PATH"
+#eval "$(pyenv init -)"
+#eval "$(pyenv virtualenv-init -)"
