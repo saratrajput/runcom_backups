@@ -11,13 +11,31 @@ alias removeSpace='rename "s/ //g" *'
 alias findPattern='grep -irnw ./ -e'
 
 # Docker remove trailing exited images
-alias docker_rm_exited='docker rm $(docker ps -a -q -f status=exited)'
+alias docker-rm-exited='docker rm $(docker ps -a -q -f status=exited)'
+
+# Docker exec existing dope container
+alias docker-exec='docker exec -it nvidia-dope-v1 bash'
 
 # Catkin cd and make
 alias cm='cd ~/dishwasher_ws && catkin_make'
 
 # activate anaconda
-alias activate_anaconda='export PATH=~/anaconda3/bin:$PATH'
+alias activate-anaconda='export PATH=~/anaconda3/bin:$PATH'
+
+# activate NVDU Visualizer environment
+alias nvdu-env='export PATH=~/anaconda3/bin:$PATH && source activate nvdu_env'
+
+# activate plot loss environment
+alias dope-env='export PATH=~/anaconda3/bin:$PATH && source activate dope_env'
+
+# activate asaoka_env
+alias asaoka-env='source ~/asaoka_2.7_env/bin/activate'
+
+# activate repl_test_env
+alias repl-test='export PATH=~/anaconda3/bin:$PATH && source activate repl_test'
+
+# activate mrcnn_env
+alias mrcnn-env='export PATH=~/anaconda3/bin:$PATH && source activate mrcnn_env'
 
 # find word in history
 alias hgrep='history | grep -i'
@@ -32,13 +50,13 @@ alias mycmake='mkdir build; cd build; cmake ..; make'
 alias zed-tools='cd /usr/local/zed/tools' 
 
 # cd to ubuntu-16
-alias cd_ubuntu_16='cd /media/sp/69e5320f-7b81-4f7f-b80b-dbf0b75f970c/home/suraj/'
+alias cd_ubuntu-16='cd /media/sp/69e5320f-7b81-4f7f-b80b-dbf0b75f970c/home/suraj/'
 
 # shortcut to cd one step back and delete build files
 alias mycclean='cd ..; rm -r build'
 
 # shortcut for source after catkin_make
-alias ros_source='source devel/setup.bash'
+alias ros-source='source devel/setup.bash'
 
 # cd aliases
 alias ..="cd .."
@@ -47,46 +65,42 @@ alias ..3="cd ../../.."
 alias ..4="cd ../../../.."
 alias ..5="cd ../../../../.."
 
-# sshfs to super-pc-1 
-alias remote_super_pc_1='sshfs suraj@35.229.227.23:/ remote_super_pc_1; cd remote_super_pc_1'
-
-# sshfs to super-pc-2
-alias remote_super_pc_2='sshfs suraj@34.80.146.141:/ remote_super_pc_2; cd remote_super_pc_2'
-
-# sshfs to super-pc-3
-alias remote_super_pc_3='sshfs suraj@35.243.106.53:/ remote_super_pc_3; cd remote_super_pc_3'
-
 # ssh super-computer-1
-alias super_pc_1='ssh suraj@35.229.227.23'
+alias super-pc-1='ssh suraj@35.229.227.23'
+# sshfs to super-pc-1 
+alias remote-super-pc-1='sshfs suraj@35.229.227.23:/ remote; cd remote'
 
 # ssh super-computer-2
-alias super_pc_2='ssh suraj@34.80.146.141'
+alias super-pc-2='ssh suraj@34.80.146.141'
+# sshfs to super-pc-2
+alias remote-super-pc-2='sshfs suraj@34.80.146.141:/ remote; cd remote'
 
 # ssh super-computer-3
-alias super_pc_3='ssh suraj@35.243.106.53'
+alias super-pc-3='ssh suraj@34.76.148.66'
+# sshfs super-computer-3
+alias remote-super-pc-3='sshfs suraj@34.76.148.66:/ remote; cd remote'
 
 # ssh super-computer-4
-alias super_pc_4='ssh suraj@35.221.100.213'
+alias super-pc-4='ssh suraj@34.76.252.27'
+# sshfs super-computer-4
+alias remote-super-pc-4='sshfs suraj@34.76.252.27:/ remote; cd remote'
 
 # ssh super-computer-5
-alias super_pc_5='ssh suraj@35.189.136.48'
-alias remote_super_pc_5='sshfs suraj@35.189.136.48:/ remote; cd remote'
+alias super-pc-5='ssh suraj@35.247.183.105'
+# sshfs super-computer-5
+alias remote-super-pc-5='sshfs suraj@35.247.183.105:/ remote; cd remote'
 
-# ssh super-computer-6
-alias super_pc_6='ssh suraj@35.221.79.94'
-
-# sshfs to max's pc
-alias remote_max_pc='sshfs suraj@10.3.3.7:/ remote_max_pc; cd remote_max_pc'
+# sshfs to asaoka's pc
+alias remote-asaoka-pc='sshfs asaoka@10.3.3.7:/ remote; cd remote'
 
 # cd to ubuntu-16 jail
-alias ubuntu_16_chroot='cd /srv/chroot/xenial_amd64'
+alias ubuntu-16-chroot='cd /srv/chroot/xenial_amd64'
 
 # launch Unreal Engine 
 alias UnrealEngine='~/UnrealEngine/Engine/Binaries/Linux/UE4Editor'
 
 # activate ros on ubuntu-16
-alias activate_ros='source /opt/ros/lunar/setup.bash'
+alias activate-ros='source /opt/ros/lunar/setup.bash'
 
 # cd to dope training in remote super pc
 alias cd-dope-train-remote='cd /home/suraj/remote_super_pc_1/home/suraj/dope/src/training'
-
