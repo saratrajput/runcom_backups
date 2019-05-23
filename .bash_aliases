@@ -8,7 +8,7 @@ alias lg='ll | grep -i'
 alias removeSpace='rename "s/ //g" *'
 
 # find word in all files in that folder
-alias findPattern='grep -irnw ./ -e'
+alias find-pattern='grep -irnw ./ -e'
 
 # Docker remove trailing exited images
 alias docker-rm-exited='docker rm $(docker ps -a -q -f status=exited)'

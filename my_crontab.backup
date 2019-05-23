@@ -28,8 +28,14 @@
 0 * * * * rsync -av ~/.vimrc ~/runcom_backups/ 
 
 # Backup scripts
-0 * * * * rsync -av ~/bin/* ~/runcom_backups/ 
+0 * * * * rsync -av ~/bin ~/runcom_backups/ 
 
 # Backup crontab
 0 10 * * * crontab -l > ~/runcom_backups/my_crontab.backup
+
+# Backup fish functions
+0 * * * * rsync -ar ~/home/suraj/.config/fish/functions ~/runcom_backups/
+
+# Backup fish config
+0 * * * * rsync -ar ~/home/suraj/.config/fish/config.fish ~/runcom_backups/
 
