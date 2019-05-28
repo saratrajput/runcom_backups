@@ -65,32 +65,26 @@ alias ..3="cd ../../.."
 alias ..4="cd ../../../.."
 alias ..5="cd ../../../../.."
 
-# ssh super-computer-1
-alias super-pc-1='ssh suraj@35.229.227.23'
-# sshfs to super-pc-1 
-alias remote-super-pc-1='sshfs suraj@35.229.227.23:/ remote; cd remote'
+# ssh commands
+alias instance-1='ssh suraj@35.229.227.23'
+alias remote-instance-1='sshfs suraj@35.229.227.23:/ remote; cd remote'
 
-# ssh super-computer-2
-alias super-pc-2='ssh suraj@34.80.146.141'
-# sshfs to super-pc-2
-alias remote-super-pc-2='sshfs suraj@34.80.146.141:/ remote; cd remote'
+alias deep-learn-instance='ssh suraj@34.80.146.141'
+alias remote-deep-learn-instance='sshfs suraj@34.80.146.141:/ remote; cd remote'
 
-# ssh super-computer-3
-alias super-pc-3='ssh suraj@34.76.148.66'
-# sshfs super-computer-3
-alias remote-super-pc-3='sshfs suraj@34.76.148.66:/ remote; cd remote'
+alias suraj-0='ssh suraj@34.76.252.27'
+alias remote-suraj-0='sshfs suraj@34.76.252.27:/ remote; cd remote'
 
-# ssh super-computer-4
-alias super-pc-4='ssh suraj@34.76.252.27'
-# sshfs super-computer-4
-alias remote-super-pc-4='sshfs suraj@34.76.252.27:/ remote; cd remote'
+alias suraj-1='ssh suraj@35.247.183.105'
+alias remote-suraj-1='sshfs suraj@35.247.183.105:/ remote; cd remote'
 
-# ssh super-computer-5
-alias super-pc-5='ssh suraj@35.247.183.105'
-# sshfs super-computer-5
-alias remote-super-pc-5='sshfs suraj@35.247.183.105:/ remote; cd remote'
+alias suraj-2='ssh suraj@34.83.171.112'
 
-# sshfs to asaoka's pc
+alias suraj-3='ssh suraj@35.227.187.80'
+
+alias instance-2='ssh suraj@35.205.192.210'
+alias remote-instance-2='sshfs suraj@35.205.192.210:/ remote; cd remote'
+
 alias remote-asaoka-pc='sshfs asaoka@10.3.3.7:/ remote; cd remote'
 
 # cd to ubuntu-16 jail

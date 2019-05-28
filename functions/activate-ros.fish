@@ -1,3 +1,3 @@
 function activate-ros
-        . /opt/ros/lunar/setup.bash $argv;
+        bash source /opt/ros/lunar/setup.bash;
 end
