@@ -133,3 +133,5 @@ export HISTTIMEFORMAT="%d/%m/%y %T "
 #export PATH="/home/suraj/.pyenv/bin:$PATH"
 #eval "$(pyenv init -)"
 #eval "$(pyenv virtualenv-init -)"
+# Virtual Environment Wrapper
+alias workoncv-3.4.4="source /home/suraj/opencv_3.4.4/OpenCV-3.4.4-py3/bin/activate"

@@ -75,15 +75,23 @@ alias remote-deep-learn-instance='sshfs suraj@34.80.146.141:/ remote; cd remote'
 alias suraj-0='ssh suraj@34.76.252.27'
 alias remote-suraj-0='sshfs suraj@34.76.252.27:/ remote; cd remote'
 
-alias suraj-1='ssh suraj@35.247.183.105'
-alias remote-suraj-1='sshfs suraj@35.247.183.105:/ remote; cd remote'
+alias suraj-1='ssh suraj@104.196.164.136'
+alias remote-suraj-1='sshfs suraj@104.196.164.136:/ remote; cd remote'
 
-alias suraj-2='ssh suraj@34.83.171.112'
+alias suraj-2='ssh suraj@35.227.187.80'
+alias remote-suraj-2='sshfs suraj@35.227.187.80:/ remote; cd remote'
 
-alias suraj-3='ssh suraj@35.227.187.80'
+alias suraj-3='ssh suraj@34.83.171.112'
+alias remote-suraj-3='sshfs suraj@34.83.171.112:/ remote; cd remote'
+
+alias suraj-4='ssh suraj@35.247.183.105'
+alias remote-suraj-4='sshfs suraj@35.247.183.105:/ remote; cd remote'
 
 alias instance-2='ssh suraj@35.205.192.210'
 alias remote-instance-2='sshfs suraj@35.205.192.210:/ remote; cd remote'
+
+alias galileo='ssh suraj@35.222.247.148'
+alias remote-galileo='sshfs suraj@35.222.247.148:/ remote; cd remote'
 
 alias remote-asaoka-pc='sshfs asaoka@10.3.3.7:/ remote; cd remote'
 

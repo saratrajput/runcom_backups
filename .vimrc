@@ -46,3 +46,5 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+
+let g:ycm_global_ycm_extra_conf = "/home/suraj/.ycm_extra_conf.py"
