@@ -1,3 +1,3 @@
 function remote-oregon
-        sshfs suraj@35.199.181.34:/ oregon; cd oregon;
+        sshfs suraj@34.83.87.181:/ oregon; cd oregon/home/suraj/;
 end

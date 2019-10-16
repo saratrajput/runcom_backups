@@ -1,3 +1,3 @@
 function oregon
-        ssh suraj@35.199.181.34;
+        ssh suraj@34.83.87.181;
 end
