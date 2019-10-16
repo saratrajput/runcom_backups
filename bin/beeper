@@ -21,5 +21,5 @@ done
 
 #while :
 #do
-play -nqt alsa synth 0.7 sine 880 vol 0.5
+play -nqt alsa synth 0.7 sine 880 vol 0.1
 #done

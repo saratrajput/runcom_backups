@@ -1,0 +1,7 @@
+#!/bin/bash
+# Script to compress large size videos
+
+INPUT=$1
+OUTPUT=$2
+
+ffmpeg -i $INPUT -vcodec libx264 -crf 20 $OUTPUT
