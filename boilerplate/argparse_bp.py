@@ -4,7 +4,7 @@ Boilerplate code to implement argparse in python.
 
 import argparse
 
-if __name__ == "__main()__":
+if __name__ == "__main__":
     # Parse arguments
     parser = argparse.ArgumentParser()
 
