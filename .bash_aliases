@@ -1,3 +1,5 @@
+# cat to bat
+alias cat="bat"
 # trash-put
 alias del="trash-put"
 
@@ -58,6 +60,9 @@ alias ros-source='source devel/setup.bash'
 # view ueye-yolo image
 alias view-ueye-yolo='rosrun image_view image_view image:=/ueye_yolo/image_raw compressed'
 
+# feh
+alias feh='feh -g 640x480'
+
 # cd aliases
 alias ..="cd .."
 alias ..2="cd ../.."
@@ -70,3 +75,32 @@ alias UnrealEngine='~/UnrealEngine/Engine/Binaries/Linux/UE4Editor'
 
 # activate ros on ubuntu-16
 alias activate-ros='source /opt/ros/lunar/setup.bash'
+
+#ssh to yolo-1
+alias yolo-1='ssh suraj@104.197.133.135'
+alias remote-yolo-1='sshfs suraj@104.197.133.135:/ yolo-1; cd yolo-1'
+#ssh to yolo-1
+alias yolo-1='ssh suraj@35.232.2.206'
+alias remote-yolo-1='sshfs suraj@35.232.2.206:/ yolo-1; cd yolo-1'
+#ssh to windows
+alias windows='ssh suraj@10.3.3.7'
+alias remote-windows='sshfs suraj@10.3.3.7:/ windows; cd windows'
+#ssh to yolo-2
+alias yolo-2='ssh suraj@34.82.121.199'
+alias remote-yolo-2='sshfs suraj@34.82.121.199:/ yolo-2; cd yolo-2'
+#ssh to yolo-1
+alias yolo-1='ssh suraj@34.66.203.41'
+alias remote-yolo-1='sshfs suraj@34.66.203.41:/ yolo-1; cd yolo-1'
+#ssh to yolo-1
+alias yolo-1='ssh suraj@104.197.215.16'
+alias remote-yolo-1='sshfs suraj@104.197.215.16:/ yolo-1; cd yolo-1'
+
+#ssh to yolo-1
+alias yolo-1='ssh suraj@35.225.38.198'
+alias remote-yolo-1='sshfs suraj@35.225.38.198:/ yolo-1; cd yolo-1'
+#ssh to yolo-1
+alias yolo-1='ssh suraj@146.148.'
+alias remote-yolo-1='sshfs suraj@146.148.:/ yolo-1; cd yolo-1'
+#ssh to yolo-1
+alias yolo-1='ssh suraj@146.148.61.3'
+alias remote-yolo-1='sshfs suraj@146.148.61.3:/ yolo-1; cd yolo-1'

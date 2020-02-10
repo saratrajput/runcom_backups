@@ -135,3 +135,7 @@ export HISTTIMEFORMAT="%d/%m/%y %T "
 #eval "$(pyenv virtualenv-init -)"
 # Virtual Environment Wrapper
 alias workoncv-3.4.4="source /home/suraj/opencv_3.4.4/OpenCV-3.4.4-py3/bin/activate"
+
+# CUDA paths for nvcc
+export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
