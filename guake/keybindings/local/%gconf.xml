@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="toggle_transparency" mtime="1559113589" type="string">
+		<stringvalue>&lt;Primary&gt;t</stringvalue>
+	</entry>
+	<entry name="move_tab_right" mtime="1554108165" type="string">
+		<stringvalue>&lt;Primary&gt;&lt;Shift&gt;Page_Down</stringvalue>
+	</entry>
+	<entry name="move_tab_left" mtime="1554108154" type="string">
+		<stringvalue>&lt;Primary&gt;&lt;Shift&gt;Page_Up</stringvalue>
+	</entry>
+	<entry name="next_tab" mtime="1550050677" type="string">
+		<stringvalue>&lt;Primary&gt;&lt;Shift&gt;Down</stringvalue>
+	</entry>
+	<entry name="previous_tab" mtime="1550050675" type="string">
+		<stringvalue>&lt;Primary&gt;&lt;Shift&gt;Up</stringvalue>
+	</entry>
+	<entry name="rename_current_tab" mtime="1550050670" type="string">
+		<stringvalue>F2</stringvalue>
+	</entry>
+</gconf>

@@ -57,6 +57,12 @@ alias mycclean='cd ..; rm -r build'
 # shortcut for source after catkin_make
 alias ros-source='source devel/setup.bash'
 
+# view ueye-images
+alias view-ueye-images='rosrun image_view image_view image:=/ueye/image compressed'
+
+# save ueye-images
+alias save-ueye-images='rosrun image_view image_saver image:=/ueye/image _filename_format:=hcj_data_collection_%04d.png'
+
 # view ueye-yolo image
 alias view-ueye-yolo='rosrun image_view image_view image:=/ueye_yolo/image_raw compressed'
 
