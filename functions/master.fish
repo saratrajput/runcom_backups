@@ -1,3 +1,3 @@
 function master
-    ssh -X user@172.24.1.4;
+    ssh -X user@10.7.2.3;
 end

@@ -57,9 +57,9 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 else
-    PS1='${debian_chroot:+($debian_chroot)}\u:\W\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
 unset color_prompt force_color_prompt
 
@@ -116,26 +116,21 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# history command with timestamp
-export HISTTIMEFORMAT="%d/%m/%y %T "
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/sp/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/sp/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/sp/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/sp/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
 
-# ROS setup
-#source /opt/ros/lunar/setup.bash
-#source ~/hoshi_ws/devel/setup.bash
-
-# Select version of QT
-#export QT_SELECT=5
-
-# Set ROS network
-#export ROS_HOSTNAME=localhost
-#export ROS_MASTER_URI=http://${ROS_HOSTNAME}:11311
-
-#export PATH="/home/suraj/.pyenv/bin:$PATH"
-#eval "$(pyenv init -)"
-#eval "$(pyenv virtualenv-init -)"
-# Virtual Environment Wrapper
-alias workoncv-3.4.4="source /home/suraj/opencv_3.4.4/OpenCV-3.4.4-py3/bin/activate"
-
-# CUDA paths for nvcc
+# cuda nvcc path
 export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda10.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}

@@ -20,22 +20,14 @@
 # For more information see the manual pages of crontab(5) and cron(8)
 # 
 # m h  dom mon dow   command
-# Backup runcom files
-0 * * * * rsync -au ~/.bash_aliases ~/runcom_backups/ 
 
-0 * * * * rsync -au ~/.bashrc ~/runcom_backups/ 
-
-0 * * * * rsync -au ~/.vimrc ~/runcom_backups/ 
-
-# Backup scripts
-0 * * * * rsync -au ~/bin ~/runcom_backups/ 
-
-# Backup crontab
-0 10 * * * crontab -l > ~/runcom_backups/my_crontab.backup
-
-# Backup fish functions
-0 * * * * rsync -au ~/.config/fish/functions/* ~/runcom_backups/functions
-
-# Backup fish config
-0 * * * * rsync -au ~/.config/fish/config.fish ~/runcom_backups/
-
+## Backup fish functions
+0 */2 * * * rsync -avu --delete ~/.config/fish/functions/ ~/runcom_backups/functions
+#
+## Backup fish config
+0 */2 * * * rsync -avu ~/.config/fish/config.fish ~/runcom_backups/
+#
+0 */2 * * * rsync -avu ~/.bash_aliases ~/runcom_backups/
+0 */2 * * * rsync -avu ~/.bashrc ~/runcom_backups/
+0 */2 * * * rsync -avu ~/.vimrc ~/runcom_backups/
+0 */2 * * * rsync -avu ~/.pylintrc ~/runcom_backups/

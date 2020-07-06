@@ -1,7 +1,6 @@
-source ~/anaconda3/etc/fish/conf.d/conda.fish
-source /opt/ros/lunar/share/rosbash/rosfish
 
-alias cat="bat"
-abbr miso_test "python darknet_local_copy.py zed -i --w=weights/miso_1000.weights --c=yolo_files/cfg/miso.cfg --m=yolo_files/data/miso.data"
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+eval /home/sp/anaconda3/bin/conda "shell.fish" "hook" $argv | source
+# <<< conda initialize <<<
 
-alias feh="feh -g 640x480"

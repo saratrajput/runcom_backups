@@ -23,3 +23,5 @@ disable=import-error, no-member, invalid-name
 # Use multiple processes to speed up Pylint.
 jobs=8
 
+# Maximum number of arguments for function / method
+max-args=10

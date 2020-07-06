@@ -49,6 +49,8 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+set wrap
+set textwidth=90
 
 "Syntastic recommended settings
 set statusline+=%#warningmsg#

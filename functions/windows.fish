@@ -1,3 +1,3 @@
 function windows
-        ssh suraj@10.7.2.27; copycat /home/suraj/remote/scripts/windows_pwd;
+        ssh suraj@192.168.1.59; copycat /home/sp/remote/scripts/windows_pwd;
 end
