@@ -1,3 +1,3 @@
 function remote-old-master
-    sshfs sp@10.3.3.9:/ old-master; cd old-master/home/sp/;
+    sshfs user@10.7.2.8:/ old_master; cd old_master/home/user/;
 end

@@ -134,3 +134,4 @@ unset __conda_setup
 # cuda nvcc path
 export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda10.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+#source /home/sp/ros2learn/environments/gym-gazebo2/provision/mara_setup.sh

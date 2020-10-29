@@ -62,4 +62,7 @@ alias activate-ros-melodic='source /opt/ros/melodic/setup.bash'
 alias activate-ros-2='source /opt/ros/dashing/setup.bash'
 
 # Source gym-gazebo2
-alias source-gym-gazebo='cd ~/repos/gym-gazebo2 ; source `pwd`/provision/mara_setup.sh'
+alias source-gym-gazebo='cd /home/sp/ros2learn/environments/gym-gazebo2 ; source `pwd`/provision/mara_setup.sh'
+
+# Create text file for each png file
+alias create-txt-for-each-png='for i in *; do touch "${i%.png}.txt"; done'

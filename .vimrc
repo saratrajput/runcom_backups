@@ -26,6 +26,9 @@ Plugin 'Valloric/YouCompleteMe'
 " Syntastic - syntax checker, pylint
 Plugin 'scrooloose/syntastic'
 
+" Surround vim - for adding brackets around a word
+Plugin 'tpope/vim-surround'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -64,3 +67,5 @@ let g:syntastic_check_on_wq = 0
 
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
 nnoremap <C-w>E :SyntasticCheck<CR> :SyntasticToggleMode<CR>
+
+set shell=/bin/bash

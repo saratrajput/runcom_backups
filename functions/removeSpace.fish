@@ -1,3 +1,3 @@
 function removeSpace
-        rename s/ //g * $argv;
+        rename 's/ //g' * $argv;
 end

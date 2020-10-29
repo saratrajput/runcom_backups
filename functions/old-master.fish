@@ -1,3 +1,3 @@
 function old-master
-    ssh -X sp@10.3.3.9;
+    ssh -X user@10.7.2.8;
 end
