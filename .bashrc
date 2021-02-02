@@ -135,3 +135,11 @@ unset __conda_setup
 export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda10.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 #source /home/sp/ros2learn/environments/gym-gazebo2/provision/mara_setup.sh
+source ~/vulkan/1.2.154.0/setup-env.sh
+
+# DreamVU
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/sp/Documents/dreamvu_pal_mini/pal_mini_firmware/PAL-Mini-Firmware-v1.1-Intel-CPU/installations/../lib
+#source /home/sp/Documents/dreamvu_pal_mini/pal_mini_firmware/PAL-Mini-Firmware-v1.1-Intel-CPU/installations/dreamvu_ws/bin/activate
+
+# Khepera
+source /opt/poky/1.8/environment-setup-cortexa8hf-vfp-neon-poky-linux-gnueabi
