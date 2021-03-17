@@ -132,14 +132,26 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 # cuda nvcc path
-export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda10.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+#export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}
+#export LD_LIBRARY_PATH=/usr/local/cuda10.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+export NVIDIA_CUDNN=/home/sp/Documents/CUDNN/cudnn/lib64/${NVIDIA_CUDNN:+:${NVIDIA_CUDNN}}
 #source /home/sp/ros2learn/environments/gym-gazebo2/provision/mara_setup.sh
 source ~/vulkan/1.2.154.0/setup-env.sh
+
+export PATH=/usr/local/cuda-11.1/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda11.1/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 
 # DreamVU
 #export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/sp/Documents/dreamvu_pal_mini/pal_mini_firmware/PAL-Mini-Firmware-v1.1-Intel-CPU/installations/../lib
 #source /home/sp/Documents/dreamvu_pal_mini/pal_mini_firmware/PAL-Mini-Firmware-v1.1-Intel-CPU/installations/dreamvu_ws/bin/activate
 
 # Khepera
-source /opt/poky/1.8/environment-setup-cortexa8hf-vfp-neon-poky-linux-gnueabi
+#source /opt/poky/1.8/environment-setup-cortexa8hf-vfp-neon-poky-linux-gnueabi
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/sp/Documents/dreamvu_pal_mini/pal_mini_firmware/PAL-Mini-Firmware-v1.1-Intel-CPU/installations/../lib
+#source /home/sp/Documents/dreamvu_pal_mini/pal_mini_firmware/PAL-Mini-Firmware-v1.1-Intel-CPU/installations/dreamvu_ws/bin/activate
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/sp/Documents/dreamvu_pal_mini/pal_mini_firmware/PAL-Mini-Firmware-v1.1-Intel-CPU/installations/../lib
+#source /home/sp/Documents/dreamvu_pal_mini/pal_mini_firmware/PAL-Mini-Firmware-v1.1-Intel-CPU/installations/dreamvu_ws/bin/activate
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/sp/Documents/dreamvu_pal_mini/pal_mini_firmware/PAL-Mini-Firmware-v1.1-Intel-CPU/installations/../lib
+#source /home/sp/Documents/dreamvu_pal_mini/pal_mini_firmware/PAL-Mini-Firmware-v1.1-Intel-CPU/installations/dreamvu_ws/bin/activate
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/sp/PAL-Mini-Firmware-v1.1-Intel-CPU/installations/../lib
+#source /home/sp/PAL-Mini-Firmware-v1.1-Intel-CPU/installations/dreamvu_ws/bin/activate

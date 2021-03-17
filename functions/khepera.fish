@@ -1,3 +1,3 @@
 function khepera
-    ssh -X root@10.21.1.174;
+    ssh -X root@10.21.1.159;
 end

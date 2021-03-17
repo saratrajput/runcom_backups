@@ -66,3 +66,14 @@ alias source-gym-gazebo='cd /home/sp/ros2learn/environments/gym-gazebo2 ; source
 
 # Create text file for each png file
 alias create-txt-for-each-png='for i in *; do touch "${i%.png}.txt"; done'
+
+# Source Khepera
+alias source-khepera='source /opt/poky/1.8/environment-setup-cortexa8hf-vfp-neon-poky-linux-gnueabi'
+
+# Source DreamVu Pal
+alias source-pal='
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/sp/PAL-Mini-Firmware-v1.1-Intel-CPU/installations/../lib;
+source /home/sp/PAL-Mini-Firmware-v1.1-Intel-CPU/installations/dreamvu_ws/bin/activate'
+
+# Source ROS2 Foxy
+alias foxy='export PYTHONPATH="/usr/bin/python3"; source /opt/ros/foxy/setup.bash; source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash; source ~/ros2_ws/install/setup.bash'
