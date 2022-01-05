@@ -8,6 +8,12 @@ Current files:
 
 ## Packages for a fresh installation
 
+* Guake, Vim, Flameshot, Meld, Feh, trashput-cli fish terminator xclip
+
+```
+sudo apt install guake vim flameshot meld feh trashput-cli fish terminator xclip
+```
+
 * Guake Terminal
 ```
 sudo apt install guake
