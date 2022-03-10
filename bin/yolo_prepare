@@ -1,0 +1,25 @@
+#!/bin/sh
+
+# This script prepares the train.txt and test.txt files for Yolo
+# training
+# Author: Suraj Pattar
+# Usage: ./yolo_prepare.sh <img_dir> train
+
+IMAGE_DIR=$1
+TRAIN_OR_TEST=$2
+DATA_PATH=$(realpath $IMAGE_DIR)/
+#DATA_PATH=/home/crdw/suraj/repos/darknet/dishwasher_im_data/$IMAGE_DIR
+
+# train.txt
+if [ "$TRAIN_OR_TEST" = "train" ]
+then
+    ls $IMAGE_DIR | grep png > train.txt
+    sed -i "s@^@$DATA_PATH@" train.txt
+# test.txt	
+elif [ "$TRAIN_OR_TEST" = "test" ]
+then
+    ls $IMAGE_DIR | grep png > test.txt
+    sed -i "s@^@$DATA_PATH@" test.txt
+else
+    echo "No command executed"
+fi
