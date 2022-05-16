@@ -11,7 +11,7 @@ Current files:
 * Guake, Vim, Flameshot, Meld, Feh, trashput-cli fish terminator xclip htop
 
 ```
-sudo apt install guake vim flameshot meld feh trash-cli fish terminator xclip htop
+sudo apt install guake vim flameshot meld feh trash-cli fish terminator xclip htop openssh-server
 ```
 
 * Pomodoro Timer
