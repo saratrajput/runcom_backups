@@ -1,4 +1,4 @@
 function mycobot
-    ssh pi@192.168.0.113;
+    ssh -X pi@192.168.0.113;
     #ssh sp@sp-idea.local;
 end
