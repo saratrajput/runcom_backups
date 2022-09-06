@@ -41,3 +41,10 @@ Enter this command on your fish shell:
 ```
 conda init fish
 ```
+
+### Gitignore global
+```
+cp /path/to/repo/.gitignore_global ~/
+
+git config --global core.excludesfile ~/.gitignore_global
+```
