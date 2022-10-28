@@ -1,3 +1,3 @@
 function remote-mycobot
-    sshfs pi@192.168.0.113:/ mycobot; cd mycobot/home/pi;
+    sshfs pi@10.1.21.19:/ mycobot; cd mycobot/home/pi;
 end
