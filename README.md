@@ -48,3 +48,19 @@ cp /path/to/repo/.gitignore_global ~/
 
 git config --global core.excludesfile ~/.gitignore_global
 ```
+
+## Setup steps for new Ubuntu laptop
+
+### To turn-off airplane mode off when lid is closed.
+1. Run:
+```
+sudo nano /etc/UPower/UPower.conf
+```
+2. Set:
+```
+IgnoreLid=true
+```
+3. If on systemd, issue the following command:
+```
+sudo service upower restart
+```
